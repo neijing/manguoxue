@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="icon" href="/img/head.ico" type="image/x-icon"/>
+		<title>阴阳术数</title>
+
+
+
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?3a44d17cc4584a27e44fb93a7cc4e66b";
+				var s = document.getElementsByTagName("script")[0]; 
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+					<img alt="128x64" src="/img/logo.png"/>
+				</div>
+			</div>
+			<div class="span12">
+				<form class="form-horizontal" action="/gp" method="POST">
+					<div class="control-group">
+						<label class="control-label" >token</label>
+						<div class="controls">
+							<input id="t" name="t" type="text" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" >site</label>
+						<div class="controls">
+							<input id="s" name="s" type="text" />
+						</div>
+					</div>
+					<div class="control-group">
+						<select name="c">
+							<option value="md5">md5</option>
+							<option value="sha1">sha1</option>
+							<option value="sha256">sha256</option>
+							<option value="sha512">sha512</option>
+						</select>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<button type="submit" class="btn btn-default">Gen</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-12">
+				<p class="text-center">Copyright ©2017-2017 阴阳术数, All Rights Reserved.</p>
+				<p class="text-center"><a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备17023750号-1</a></p>	
+				<p class="text-center"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702002748"><img src="/img/beian.png"/>沪公网安备 31011702002748号</a></p>
+				<p class="text-center">本站所收录作品、社区话题、书库评论及本站所做之广告均属个人行为，与本站立场无关</p>
+			</div>
+		</div>
+
+		<script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+	</body>
+</html>

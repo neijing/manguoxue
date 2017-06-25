@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<link rel="icon" href="/img/head.ico" type="image/x-icon"/>
+		<title>阴阳术数</title>
+
+		<!-- Bootstrap -->
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?3a44d17cc4584a27e44fb93a7cc4e66b";
+				var s = document.getElementsByTagName("script")[0]; 
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+					<img alt="128x64" src="/img/logo.png"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<ul class="nav nav-list">
+						<li class="nav-header">
+							<h2>古籍</h2>
+						</li>
+						<li class="active">
+							<a href="/guji/zhongyi">中医</a>
+						</li>
+						<li>
+							<a href="/guji/fengshui">风水</a>
+						</li>
+						<li>
+							<a href="/guji/zaxue">杂学</a>
+						</li>
+					</ul>
+					<ul class="nav nav-list">
+						<li class="nav-header">
+							<h2>今用</h2>
+						</li>
+						<li class="active">
+							<a href="/jinyong/fengshuikanyu">风水堪舆</a>
+						</li>
+						<li>
+							<a href="/jinyong/pianfang">偏方</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="nav nav-pills">
+						<li class="active">
+							<a href="/">首页</a>
+						</li>
+						<li>
+							<a href="#">排行</a>
+						</li>
+						<li>
+							<a href="#">APP下载</a>
+						</li>
+					</ul>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="breadcrumb">
+								{{.Navi}}
+								<li class="active">
+									{{.SectionTitle}}
+								</li>
+							</ul>
+							<div>
+								<audio controls controlsList="nodownload">
+									<source src="{{.Mp3Url}}" type="audio/mpeg" />
+									Your browser does not support the audio element.
+								</audio>
+							</div>
+							<div class="article-content">
+								{{.Content}}
+							</div>
+							<div class="pagination">
+								<li>
+									<a href="{{.PrePage}}">上一页</a>
+								</li>
+								<li>
+									<a href="{{.NextPage}}">下一页</a>
+								</li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<form class="form-search" action="/search.cgi" method="POST">
+						<input class="input-medium search-query" type="text" name="k" /> <button type="submit" class="btn">查找</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<p class="text-center">Copyright ©2017-2017 阴阳术数, All Rights Reserved.</p>
+					<p class="text-center"><a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备17023750号-1</a></p>	
+					<p class="text-center"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702002748"><img src="/img/beian.png"/>沪公网安备 31011702002748号</a></p>
+					<p class="text-center">本站所收录作品、社区话题、书库评论及本站所做之广告均属个人行为，与本站立场无关</p>
+				</div>
+			</div>
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+		</body>
+	</html>
